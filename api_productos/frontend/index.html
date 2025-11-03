@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Productos</title>
+  <link rel="stylesheet" href="/api_productos/frontend/style.css">
+</head>
+<body>
+  <h1>Gestión de Productos</h1>
+
+  <section id="form-section">
+    <h2>Agregar producto</h2>
+    <form id="product-form">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="descripcion" placeholder="Descripción" required>
+      <input type="number" id="precio" placeholder="Precio" required>
+      <input type="number" id="stock" placeholder="Stock" required>
+      <button type="submit">Agregar</button>
+    </form>
+  </section>
+
+  <section id="list-section">
+    <h2>Lista de productos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="product-list"></tbody>
+    </table>
+  </section>
+
+  <script src="/api_productos/frontend/app.js"></script>
+</body>
+</html>
